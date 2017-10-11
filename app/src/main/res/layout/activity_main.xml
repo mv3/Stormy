@@ -200,7 +200,7 @@
         app:layout_constraintVertical_bias="0.437" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -211,7 +211,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="0dp">
+        >
 
         <Button
             android:id="@+id/hourlyButton"
@@ -232,4 +232,19 @@
             android:textColor="#ffffffff"
             android:layout_marginLeft="2dp"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/drinkNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Finding the perfect drink..."
+        app:layout_constraintBottom_toTopOf="@+id/timeLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationLabel"
+        app:layout_constraintVertical_bias="0.518"/>
 </android.support.constraint.ConstraintLayout>
